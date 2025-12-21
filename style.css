@@ -10,7 +10,7 @@ ul {
 .container {
   width: auto;
   height: 1000vh;
-  background-color: rgb(254, 254, 245);
+  background-color: rgb(251, 251, 228);
 }
 .nav {
   width: auto;
@@ -143,7 +143,8 @@ h3 {
   opacity: 0.7;
 }
 
-.tabs {
+.tabs,
+.content-list {
   width: auto;
   padding-inline: 24px;
 }
@@ -151,20 +152,22 @@ h3 {
 .items {
   display: flex;
   white-space: nowrap;
-  overflow-x: auto;
+  /* overflow-x: auto; */
+  overflow: hidden;
 }
 
 .items::-webkit-scrollbar {
   width: 0.2px;
 }
 .item-text {
-  width: auto;
+  width: max-content;
   height: 20px;
   display: inline-block;
   padding: 7px;
   margin: 15px;
   margin-left: 0;
   padding-left: 0;
+  position: relative;
 }
 
 .item-text a {
@@ -175,23 +178,159 @@ h3 {
   letter-spacing: 0.2px;
   color: #333333ad;
   /* position: relative; */
-  /* padding: 0 10px; */
 }
 
-.item-text a::after {
+.item-text::after {
   content: "";
   position: absolute;
   background-color: #f64920;
-  height: 3px;
+  height: 5px;
   width: 0;
-  left: 24px;
-  bottom: -60px;
+  left: 0;
+  bottom: -10px;
+  border-radius: 10px;
   transition: 0.3s;
 }
 
-.item-text a:hover::after {
+.item-text:hover::after {
   width: 50px;
 }
 .item-text a:hover {
   color: #f64920;
+}
+
+.content-price {
+  width: auto;
+  height: auto;
+  border: #333333ad 1px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(150px);
+  gap: 20px;
+}
+
+.cover {
+  width: auto;
+  height: 147px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 15px;
+}
+
+.layer {
+  height: 83px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.bg-icon img {
+  width: 82px;
+  height: 82px;
+  border-radius: 10px;
+}
+
+.auditor {
+  width: 194px;
+  height: 83px;
+}
+.title {
+  font-family: "Poppins", serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 120%;
+  color: #222325;
+}
+
+.name-audit {
+  display: flex;
+  width: 194px;
+  height: 37px;
+  margin-top: 10px;
+}
+
+.icon img {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  height: 37px;
+  margin-left: 10px;
+}
+
+h4 {
+  font-family: "DM Sans", serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #222325;
+}
+
+.account {
+  font-family: "DM Sans", serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #333333ad;
+}
+
+.service {
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.rating {
+  width: 143px;
+  height: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating img {
+  width: 90px;
+  height: auto;
+}
+
+.value {
+  width: 45px;
+  height: 17px;
+  font-family: "DM Sans", serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  text-decoration: underline;
+  color: #333333;
+  opacity: 0.8;
+}
+
+.price {
+  width: 83px;
+  height: 24px;
+  color: #3ecf4c;
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  margin-right: 5px;
+}
+
+.banner {
+  width: 320px;
+  height: 400px;
+  background-image: url(img/banner.jpg);
+  background-size: cover;
+  background-position-x: center;
+  display: flex;
+  justify-content: center;
+  margin: 30px 24px;
 }
