@@ -9,7 +9,7 @@ ul {
 
 .container {
   width: auto;
-  height: 1000vh;
+  height: auto;
   background-color: rgb(251, 251, 228);
 }
 .nav {
@@ -31,7 +31,9 @@ ul {
   align-items: center;
 }
 
-.dashboard {
+.dashboard,
+.banner-CTA,
+.footer {
   width: 100%;
   height: auto;
   display: flex;
@@ -54,12 +56,13 @@ ul {
   border-radius: 15px;
 }
 
-.img-hero {
+.img-hero,
+.frame {
   width: 320px;
   height: 400px;
   background-color: black;
   border-radius: 15px;
-  opacity: 0.8;
+  opacity: 0.7;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -333,4 +336,200 @@ h4 {
   display: flex;
   justify-content: center;
   margin: 30px 24px;
+  border-radius: 10px;
+}
+
+.description {
+  width: 280px;
+  height: 168px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.news {
+  font-family: "Dm Sans", serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #c1c2c4;
+}
+
+.desc-title {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 110%;
+  color: #ffffff;
+  text-align: center;
+  padding: 5px;
+}
+
+.desc {
+  font-family: "Dm Sans", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #f4f5fa;
+  text-align: center;
+}
+
+.button-cta {
+  width: 280px;
+  height: 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.email {
+  width: 280px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: none;
+  font-family: "DM Sans", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #333333ad;
+  opacity: 0.7;
+  text-align: center;
+}
+
+.btn-subs {
+  width: 280px;
+  height: 40px;
+  background-color: #ffbd3a;
+  border: none;
+  border-radius: 8px;
+  font-family: "DM Sans", serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: 30px;
+  background-color: #ffffff;
+}
+
+.bio {
+  width: 320px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.bio img {
+  width: 162px;
+  height: 25px;
+  margin-bottom: 20px;
+}
+
+.address,
+.communitas {
+  width: 320px;
+  height: 96px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.iklan {
+  font-family: "DM Sans", serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #222325;
+}
+
+.map,
+.phone {
+  font-family: "DM Sans", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #222325;
+}
+
+.grade {
+  width: 320px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name-grade {
+  font-family: "Dm Sans", serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #222325;
+}
+
+.arr {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: #ffffff;
+}
+.material-symbols-outlined {
+  font-size: 24px;
+  font-weight: 400;
+  color: #3a35418a;
+}
+.row {
+  width: 320px;
+  height: 1px;
+  border: 1px;
+  margin: 20px 0;
+  background-color: #3a35411f;
+}
+.sosmed {
+  width: 320px;
+  height: 91px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.icon-sosmed {
+  width: 185px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.i-sosmed {
+  width: 35px;
+  height: 35px;
+  border: none;
+}
+
+.copyright {
+  font-family: "DM Sans", serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #333333ad;
 }
