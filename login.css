@@ -11,7 +11,7 @@ ul {
 .container {
   width: 100%;
   height: auto;
-  background-color: rgb(251, 251, 228);
+  background-color: rgb(255, 255, 245);
 }
 
 @media screen and (max-width: 576px) {
@@ -258,7 +258,7 @@ ul {
 /* Dekstop */
 @media screen and (min-width: 576px) {
   .nav {
-    width: 100%;
+    width: auto;
     height: 80px;
     margin: 0 auto;
     display: flex;
@@ -278,7 +278,7 @@ ul {
   }
 
   .container-form {
-    width: 100%;
+    width: auto;
     height: 944px;
     padding: 28px 20px;
     display: flex;

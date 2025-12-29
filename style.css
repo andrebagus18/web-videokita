@@ -11,7 +11,7 @@ ul {
 .container {
   width: 100%;
   height: auto;
-  background-color: rgb(251, 251, 228);
+  background-color: rgb(255, 255, 245);
 }
 
 @media screen and (max-width: 576px) {
@@ -26,6 +26,9 @@ ul {
     width: auto;
     height: 74px;
     margin: 0 auto;
+    position: sticky;
+    top: 0;
+    z-index: 100;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,7 +47,7 @@ ul {
 
   .dashboard,
   .banner-CTA {
-    width: 100%;
+    width: auto;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -246,6 +249,14 @@ ul {
     height: 82px;
     border-radius: 10px;
   }
+  .bg-icon {
+    overflow: hidden;
+  }
+
+  .bg-icon img:hover {
+    transform: scale(1.5, 1.5);
+    transition: 0.8s;
+  }
 
   .auditor {
     width: 194px;
@@ -288,7 +299,7 @@ ul {
     color: #222325;
   }
 
-  .account {
+  .account-name {
     display: flex;
     font-family: "DM Sans", serif;
     font-weight: 400;
@@ -562,7 +573,8 @@ ul {
 @media screen and (min-width: 576px) {
   .drop,
   .arr,
-  .material-symbols-outlined {
+  .material-symbols-outlined,
+  .account-name {
     display: none;
   }
   .profile {
@@ -591,6 +603,9 @@ ul {
     width: auto;
     height: 74px;
     margin: 0 auto;
+    position: sticky;
+    top: 0;
+    z-index: 100;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -645,7 +660,7 @@ ul {
 
   .header {
     width: 920px;
-    height: 215;
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -696,7 +711,7 @@ ul {
 
   .content {
     width: 1200px;
-    height: 1525px;
+    height: auto;
   }
 
   .content-title {
@@ -811,22 +826,30 @@ ul {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
+    padding: 20px;
   }
 
   .layer {
     width: auto;
-    height: 275px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 5px;
   }
 
   .bg-icon img {
     width: 344px;
     height: 193px;
     border-radius: 10px;
-    margin-top: 10px;
+  }
+
+  .bg-icon {
+    overflow: hidden;
+  }
+
+  .bg-icon img:hover {
+    transform: scale(1.5, 1.5);
+    transition: 0.8s;
   }
 
   .auditor {
@@ -889,8 +912,7 @@ ul {
     justify-content: space-around;
   }
 
-  .account,
-  .acc-di {
+  .account {
     font-family: "DM Sans", serif;
     font-weight: 400;
     font-size: 14px;
@@ -915,7 +937,6 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 10px;
   }
 
   .rating {
@@ -1058,8 +1079,7 @@ ul {
   }
 
   .footer {
-    width: 100%;
-    height: auto;
+    width: auto;
     padding: 30px;
     background-color: #ffffff;
   }
